@@ -23,7 +23,10 @@
                     <tr>
                         <td>{{ libro.id }}</td>
                         <td>{{ libro.title }}</td>
-                        <td>{{ libro.image }}</td>
+                        <td>
+                            <img src="{{ libro.image.url }}" height="100"/>
+                            
+                        </td>
                         <td>{{ libro.description }}</td>
                         <td> 
                             <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>
