@@ -13,6 +13,7 @@ class Libro(models.Model):
         fila = f"Titulo: {self.title} - Descripción {self.description}"
         return fila
 
+#Borra la imágen almacenada del sistema directamente
     def delete(self, using = None, keep_parents=False):
         self.image.storage.delete(self.image.name)
         super().delete()

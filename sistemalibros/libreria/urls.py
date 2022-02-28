@@ -11,4 +11,4 @@ urlpatterns = [
     path('libros', views.libros, name='libros'),
     path('libros/crear', views.crear_libro, name='crear'),
     path('libros/editar', views.editar_libro, name='editar'),
-] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)#Conectar las imágenes que esteblecí en las setting de django
